@@ -150,7 +150,7 @@ html, body {
   justify-content: space-between;*/
 
 }  
-.header__navigation-list{
+.navigation__list{
   list-style: none;
   margin-top: 25px;
   background: #ffffff;
@@ -161,21 +161,21 @@ html, body {
   padding: 0;
 }
 
- .navigation-list__item {
+ .navigation__item {
   display: flex;
   align-items: center;
   flex-grow: 1;
   
   /*border: 1px solid #000000;*/
  }
- .navigation-list__item:last-child {
+ .navigation__item:last-child {
   padding-right: 62px;
  }
- .navigation-list__item:first-child {
+ .navigation__item:first-child {
   padding-left: 52px;
 }
 
- .navigation-list__link {
+ .navigation__link {
   display: block;
   text-decoration: none;
   width: 100%
@@ -185,10 +185,10 @@ html, body {
   padding: 25px 20px;
 
  }
-  .navigation-list__item:hover {
+  .navigation__item:hover {
    background-color: #ee700e;
  }
-.navigation-list__item:hover::after {
+.navigation__item:hover::after {
   display: block;
   position: absolute;
   content: ''; 
@@ -198,7 +198,7 @@ html, body {
   bottom: -14px;
   left: 0;
 }
-.navigation-list__item:hover .navigation-list__link {
+.navigation__item:hover .navigation__link {
   color: #ffffff;
 }
 .bot-head__title {
