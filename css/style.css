@@ -350,7 +350,7 @@ html, body {
 }
 
 .news {
-  background-image: url('../images/background/news.png');
+  background-image: url('../images/background/news.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
@@ -485,7 +485,7 @@ html, body {
 }
 
 .footer {
-  background-image: url('../images/background/map2.png');
+  background-image: url('../images/background/map.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   top: 0;
