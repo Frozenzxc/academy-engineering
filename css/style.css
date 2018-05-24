@@ -70,7 +70,6 @@ html, body {
   padding-top: 25px;
   padding-left: 52px;
   display: flex;
-  
   justify-content: space-between;
   align-items: center;
 }
@@ -79,13 +78,14 @@ html, body {
   max-height: 84px;
   max-width: 314px;
 }
-
+.header__phone {
+  margin-right: 74px;
+}
 .header__number {
   font-weight: 900;
   font-size: 18px;
   color: #ffffff;
   text-decoration: none;
-  margin-right: 74px;
  }
 .header__number--orange:hover {
   color: #ee700e;
@@ -163,14 +163,14 @@ html, body {
   min-width: 1120px;
   width: 100%;
 }
-.banner__title {
+.banner__text {
   font-size: 36px;
   font-weight: 900;
   line-height: 46px;
   color: #ffffff;
   text-align: center;
 }
-.banner__title--uppercase {
+.banner__text--uppercase {
   text-transform: uppercase;
   font-size: 42px;
   font-weight: 900;
@@ -199,7 +199,7 @@ html, body {
   border: 1px solid #ffffff;
   border-radius: 50%;
 }
-.skills__icon--white {
+.skills__item:nth-child(2n) .skills__icon {
   background-color: #ffffff;
 }
 .skills__text {
@@ -213,7 +213,7 @@ html, body {
 .banner__buttons {
   padding-top: 84px;
 }
-.buttons {
+.documents-buttons {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,28 +227,39 @@ html, body {
   width: 234px;
   height: 60px;
   background-color: #ffffff;
+  
+}
+.buttons__link {
+  display: block;
+  text-decoration: none;
+  width: 100%;
   font-size: 14px;
   font-weight: 500;
-  color: #727272;
+  color: #727272
 }
+
 .buttons__item:last-child {
   margin-left: 28px;
 }
 .buttons__item:hover {
- color: #ffffff;
  background-color: #ee700e;
 }
+.buttons__item:hover .buttons__link{
+ color: #ffffff;
+ }
 
 .services {
   padding-top: 80px;
   padding-bottom: 90px;
   width: 100%;
   background-color: #ffffff;
+}
+.services__info {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.titles {
+.title {
   font-size: 36px;
   font-weight: 900;
   text-align: center;
@@ -273,31 +284,32 @@ html, body {
   color: #727272;
   line-height: 24px;
 }
-.services__info {
+.services__more {
   font-size: 15px;
   font-weight: 300;
   opacity: 0;
   padding-top: 48px;
 }
-.services__info::before {
+.services__more::before {
   display: block;
   position: absolute;
   content: ''; 
   background-color: #ee700e;
-  height: 1px;
-  width: 16px;
-  right: 87px;
+  height: 2px;
+  width: 11px;
+  right: 92px;
   bottom: 8px;
 }
-.services__info::after {
+.services__more::after {
   display: block;
   position: absolute;
   content: ''; 
-  border-top: 1px solid #ee700e;
-  border-right: 1px solid #ee700e;
-  transform: rotate(45deg);
-  height: 4px;
-  width: 4px;
+  border-top: 3px solid transparent;
+  border-left: 5px solid #ee700e;
+  border-bottom: 3px solid transparent;
+  /*transform: rotate(45deg);*/
+  height: 0px;
+  width: 0px;
   right: 87px;
   bottom: 6px;
 }
@@ -305,14 +317,14 @@ html, body {
   border: 1px solid #ee700e;
   color: #ee700e;
 }
-.services__info:hover {
+.services__more:hover {
   text-decoration: underline;
 }
 .services__item:hover .services__text{
    color: #ee700e;
 }
 
-.services__item:hover .services__info{
+.services__item:hover .services__more{
    opacity: 1;
 }
 
@@ -328,10 +340,10 @@ html, body {
   padding-top: 78px;
   padding-bottom: 82px;
 }
-.titles--white {
+.title--white {
   color: #ffffff;
 }
-.news-desc {
+.news__desc {
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -349,14 +361,14 @@ html, body {
 .news__date {
   font-size: 15px;
   font-weight: 500;
-  margin-bottom: 45px;
-
+  line-height: 22px;
 }
 .news__date--large {
   font-size: 24px;
   font-weight: 900;
 }
 .news__title {
+  margin-top: 45px;
   margin-bottom: 68px;
 }
 .news__short {
@@ -490,28 +502,28 @@ html, body {
   padding-left: 52px;
 }
 
-.requisites__number {
+.requisites__phone {
   font-size: 18px;
   font-weight: 900;
   line-height: 24px;
   margin-bottom: 24px;
 }
-.requisites__addr {
+.requisites__address {
   font-size: 18px;
   font-weight: 900;
   line-height: 24px;
   margin-top: 42px;
   margin-bottom: 24px;
 }
-.requisites__number--orange {
+.requisites__number {
   color: #ee700e;
   font-weight: 900;
   text-decoration: none;
 }
-.requisites__number--orange:hover {
+.requisites__number:hover {
   text-decoration: underline;
 }
-.addr {
+.address {
   font-size: 17px;
   font-weight: 500;
   line-height: 24px;
