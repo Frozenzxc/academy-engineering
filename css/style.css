@@ -41,7 +41,7 @@
   box-sizing: border-box;
   position: relative;
   outline: none;
-  font-family: 'Museo Sans Cyrl', sans-serif;
+  font-family: 'Museo Sans Cyrl', 'Helvetica', sans-serif;
   font-weight: 500;
   font-style: normal;
 }
