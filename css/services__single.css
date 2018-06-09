@@ -1,0 +1,433 @@
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-700.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-700.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-500.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-500.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-300.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-300.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-900.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-900.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Cyrl';
+    src: url('../fonts/MuseoSansCyrl-500-italic.woff2') format('woff2'),
+        url('../fonts/MuseoSansCyrl-500-italic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+* {
+  box-sizing: border-box;
+  position: relative;
+  outline: none;
+  font-family: 'Museo Sans Cyrl', 'Helvetica', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+html, body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+
+.header {
+  position: absolute;
+  top: 0;
+  min-height: 228px;
+  z-index: 4;
+  width: 100%;
+  margin-left: 0 auto;
+
+}
+
+.container {
+    width: 1120px;
+    margin: 0 auto;
+    
+}
+
+.header__logo {
+  width: 100%;
+  max-height: 130px;
+  padding-top: 25px;
+  padding-left: 52px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__image {
+  max-height: 84px;
+  max-width: 314px;
+}
+.header__phone {
+  margin-right: 74px;
+}
+.header__number {
+  font-weight: 900;
+  font-size: 18px;
+  color: #ffffff;
+  text-decoration: none;
+ }
+.header__number--orange:hover {
+  color: #ee700e;
+ }
+.header__number::before {
+  content: '';
+  background-image: url(../images/icons/icon_telefone.png);
+  position: absolute;
+  height: 18px;
+  width: 17px;
+  top: 1px;
+  left: -28px;
+}
+.header__navigation {
+  margin-top: 25px;
+}  
+.navigation__list{
+  list-style: none;
+  background: #ffffff;
+  display: flex;
+  max-height: 94px;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0;
+}
+
+ .navigation__item {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+ .navigation__item:last-child {
+  padding-right: 62px;
+}
+ .navigation__item:first-child {
+  padding-left: 52px;
+}
+
+ .navigation__link {
+  display: block;
+  text-decoration: none;
+  width: 100%
+  font-size: 15px;
+  font-weight: 700;
+  color: #000000;
+  padding: 25px 20px;
+}
+ .navigation__item:hover {
+  background-color: #ee700e;
+}
+.navigation__item:hover::after {
+  display: block;
+  position: absolute;
+  content: ''; 
+  background-color: #ee700e;
+  height: 14px;
+  width: 100%;
+  bottom: -14px;
+  left: 0;
+}
+.navigation__item:hover .navigation__link {
+  color: #ffffff;
+}
+
+.banner {
+  padding-top: 300px;
+  padding-bottom: 110px;
+  background-image: url('../images/background/services__header.jpg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  min-height: 499px;
+  min-width: 1120px;
+  width: 100%;
+}
+.banner__text {
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 46px;
+  color: #ffffff;
+  text-align: center;
+}
+.banner__text--uppercase {
+  text-transform: uppercase;
+  font-size: 42px;
+  font-weight: 900;
+}
+
+.services {
+  padding-top: 43px;
+  padding-bottom: 109px;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.services__path {
+  display: flex;
+  justify-content: center;
+}
+
+.services__link {
+ font-size: 16px;
+ font-weight: 300;
+ text-decoration: none;
+ color: #000000;
+}
+
+.services__link:first-child:hover {
+  color: #ee700e;
+}
+.services__link:last-child {
+  color: #ee700e
+}
+
+.services__title {
+  margin-top: 40px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  text-align: center;
+}
+
+.services__info {
+
+}
+
+.services__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+.services__summary {
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.services__list {
+    counter-reset:li; /* Инициализируем счетчик */
+    padding:0; /* Удаляем  установленное по умолчанию левое поле*/
+    list-style:none; /* Отменяем нумерацию установленную по умолчанию */
+}
+
+.services__item {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+      position:relative; /* Создаем контекст для позиционирования элементов */
+      margin:52px 0 0 210px; /* Даем каждому элементу списка отступ слева, что бы освободить пространство для нумерации */
+    }
+.services__item:first-child {
+  margin-top: 35px;
+}
+
+.services__item:before {
+      content:counter(li)"."; /* В качестве данных используем счетчик */
+      counter-increment:li; /* Увеличиваем значение счетчика на 1 */
+      /* Позиционируем и оформляем цифры */
+      position:absolute;
+      top: 5px;
+      left: -90px;
+      padding: 7px 0;
+      /*border-top:2px solid #666;
+      /*color:#000;*/
+      font-size: 46px;
+      font-style: italic;
+      text-align:center;
+      background: linear-gradient(#c9dbeb,#607a91);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+
+}
+.services__list:after {
+  display: block;
+  position: absolute;
+  content: ''; 
+  background: linear-gradient(#c9dbeb,#607a91);
+  height: 218px;
+  width: 1px;
+  bottom: 0;
+  left: 165px;
+}
+
+.services__payment {
+  font-size: 14px;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  margin-top: 41px;
+  background: #efbf88;
+  border: 1px solid #ea8c2c;
+  min-height: 38px;
+  width: 100%;
+  align-items: center;
+}
+
+.services__cost {
+  width: 31%; 
+}
+
+.services__cost:after {
+  display: block;
+  position: absolute;
+  content: ''; 
+  background: #ea8c2c;
+  height: 36px;
+  width: 1px;
+  top: -9px;
+  right: 118px;
+}
+
+.services__price--bold {
+  font-weight: 700;
+}
+
+
+.footer {
+  background-image: url('../images/background/services__footer.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  min-height: 425px;
+  min-width: 1120px;
+  width: 100%;
+  padding-top: 74px;
+  padding-bottom: 61px;
+
+}
+/*.footer__requisites {
+  margin: 74px auto;
+}*/
+.requisites {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+}
+
+.requisites__phone {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+  margin-top: 30px;
+}
+.requisites__address {
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 24px;
+  margin-top: 30px;
+ }
+.requisites__number {
+  color: #ee700e;
+  font-weight: 900;
+  text-decoration: none;
+}
+.requisites__number:hover {
+  text-decoration: underline;
+}
+.address {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.requisites__link {
+  display: block;
+  text-decoration: none;
+  width: 100%
+  font-size: 15px;
+  font-weight: 700;
+  color: #ffffff;
+  padding: 25px 20px;
+}
+
+.requisites__link:hover {
+  color: #ee700e;
+}
+
+
+.requisites__social {
+  display: flex;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  background: #ffffff;
+  margin-left: 20px;
+}
+.social:last-child {
+  margin-left: 10px;
+}
+
+.social:hover{
+  border: 1px solid #ee700e;
+
+}
+
+.footer__copyrights {
+  margin-top: 90px;
+
+}
+.copyrights {
+  font-size: 16px;
+  font-weight: 300;
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+}
+.copyrights__link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 900;
+  color: #ee700e;
+}
+.copyrights__link:hover {
+  text-decoration: underline;
+}
+/*.footer::after {
+  content: url(../images/icons/marker.png);
+  position: absolute;
+  height: 46px;
+  width: 32px;
+  top: 307px;
+  left: 750px;
+}*/
