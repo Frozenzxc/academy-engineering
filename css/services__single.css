@@ -211,13 +211,44 @@ html, body {
 
 .services__title {
   margin-top: 40px;
+  z-index: 2;
 }
 
 .title {
   font-size: 36px;
   font-weight: 900;
   text-align: center;
+  z-index: 2;
 }
+
+.services__title:before {
+  display: block;
+  position: absolute;
+  content: ''; 
+  border-top: 1px solid #ffcfa9;
+  border-right: 1px solid #ffcfa9;
+  transform: rotate(45deg);
+  height: 58px;
+  width: 58px;
+  left: 486px;
+  bottom: -10px;
+  z-index: -1;
+}
+
+.services__title:after {
+  display: block;
+  position: absolute;
+  content: ''; 
+  border-bottom: 1px solid #ffcfa9;
+  border-left: 1px solid #ffcfa9;
+  transform: rotate(45deg);
+  height: 58px;
+  width: 58px;
+  left: 568px;
+  bottom: -10px;
+  z-index: -1;
+}
+
 
 .services__info {
 
